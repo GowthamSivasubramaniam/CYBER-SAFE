@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>CyberSafe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="popup.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: black;
+      /* background-image: url('bg1.jpg'); */
+      background-size: cover;
+      height: auto;
+      border-radius: 15px;
+    }
+    #card
+    { 
+      display: none;
+      z-index: 1;
+      background-color: rgb(243, 237, 237,0.08);
+      height: 100px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      width:200px;
+      border-radius: 15px;
+      padding: 20px;
+      margin-left: 150px;
+      margin-top: 20px;
+      text-align: justify;
+      align-content: center;
+      overflow: auto;
+      &::-webkit-scrollbar{
+      display: none;
+    }}
+   
+    
+    .card
+    {
+       z-index: 1;
+      background-color: rgb(243, 237, 237,0.08);
+      height: 100px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      width:200px;
+      border-radius: 15px;
+      text-align: justify;
+      align-content: center;
+      padding: 20px;
+      /* margin-left: 20px; */
+      
+    }
+    #resultText2
+    {  
+      margin-top: -2px;
+       font-size: 1.2em;
+       margin-left: 60px;
+    }
+    #resultText3
+    {  
+      margin-top: 5px;
+       font-size: 1em;
+       margin-left: 5px;
+       line-height: 20px;
+    }
+    #resultText4
+    {  
+      margin-top: 5px;
+       font-size: 1.2em;
+       margin-left: 10px;
+       line-height: 20px;
+    }
+    #resultText5
+    {  
+      margin-top: 5px;
+       font-size: 1em;
+       margin-left: 5px;
+       line-height: 20px;
+    }
+    #resultText1
+    {  
+      margin-top: 20px;
+       font-size: 1.2em;
+       margin-left: 30px;
+    }
+    #resultText
+    {
+      margin-top: 40px;
+       font-size: 1.2em;
+       margin-left: 30px;
+    }
+    #but1
+    {
+      padding: 10px;
+      display: none;
+      background-color: rgb(243, 237, 237,0.08);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      color: aliceblue;
+      margin-left: 160px;
+      margin-top: 20px;
+      width:80px;
+      border: transparent;
+      border-radius: 10px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    #but
+    {
+      padding: 10px;
+      display: none;
+      background-color: rgb(243, 237, 237,0.08);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      color: aliceblue;
+      margin-left: 50px;
+      margin-top: 20px;
+      width:80px;
+      font-size: 2em;
+      border: transparent;
+      border-radius: 10px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    #rcard
+    {
+      display: none;
+    }
+  </style>
+</head>
+<body style="width:auto;"> 
+  
+  <center><h1 style="color: aliceblue; font-family: Nunito;" >Cyber<span style="color: green;">S</span>Afe</h1></center>
+  <center><h1 style="width: 150px; font-size: 1.3em; color: rgb(240, 173, 173);">Let's find deception</h1></center>
+  <div style="display: flex;gap: 30px;">
+  <div class="card">
+  <h1 id="resultText1" style="color: rgb(251, 251, 251); width:200px;"></h1>
+   <h1 id="resultText" style="color: rgb(248, 248, 248); width:200px;" >Wait for sometime....</h1> 
+ </div>
+ <div class="card" id="rcard">
+ <h1 id="resultText2" style="color: rgb(252, 252, 252); width:200px; " ></h1>
+ <h2 id="resultText3" style="color: rgba(255, 255, 255, 0.952); width:200px;" >Here you find info about dark patterns</h2> 
+</div>
+</div>
+</div>
+  <div id="card">
+ 
+  <h1 id="resultText4" style="color: rgb(254, 251, 251);  width:180px" ></h1>
+  <h2 id="resultText5"  style="color:  rgba(255, 254, 254, 0.952); width:180px;" >This field will show you the text that was flagged</h2>
+</div>
+<div style="display: flex;">
+  <button id="but1" > <i class="fa fa-caret-left" style="font-size:24px"></i>
+  </button>
+<button id="but" >
+  <i class="fa fa-caret-right" style="font-size:24px"></i>
+</button>
+</div>
+</body>
+</html>
